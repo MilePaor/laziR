@@ -3,7 +3,9 @@ import "../css/loader.css";
 
 const Loader = () => {
   return (
-    <div className="lds-ripple">
+    <div class="lds-ellipsis">
+      <div />
+      <div />
       <div />
       <div />
     </div>

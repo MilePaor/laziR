@@ -34,20 +34,6 @@ class App extends React.Component {
     console.log("mount");
   }
 
-  componentWillUpdate(nextProps, nextState) {
-    if (nextState.selectedSource !== this.state.selectedSource) {
-      (async () => {
-        try {
-          this.setState({
-            data: await this.getData(nextState.selectedSource)
-          });
-        } catch (e) {
-          console.log("erorcina", e);
-        }
-      })();
-    }
-  }
-
   async getSource() {
     const res = await axios("https://newsapi.org/v1/sources");
     return await res.data.sources;
@@ -63,10 +49,16 @@ class App extends React.Component {
   }
 
   handleSourceChange = e => {
-    console.log(e.target.value);
-    this.setState({
-      selectedSource: e.target.value
-    });
+    (async () => {
+      try {
+        this.setState({
+          selectedSource: e.target.value,
+          data: await this.getData(e.target.value)
+        });
+      } catch (e) {
+        console.log("erorcina", e);
+      }
+    })();
   };
 
   render() {
