@@ -30,8 +30,9 @@ class App extends React.Component {
       (async () => {
         try {
           this.setState({
-            newsData: await this.getData(),
-            newsSources: await this.getSource()
+            newsData: await this.getNewsData(),
+            newsSources: await this.getSource(),
+            weatherData: await this.getWeatherData()
           });
         } catch (e) {
           console.log("erorcina", e);
@@ -46,7 +47,7 @@ class App extends React.Component {
     return await res.data.sources;
   }
   // get news data
-  async getData(source = this.state.newsSelectedSource) {
+  async getNewsData(source = this.state.newsSelectedSource) {
     const res = await axios(
       `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${
         this.state.apiKeyNews
@@ -54,6 +55,17 @@ class App extends React.Component {
     );
     return await res.data.articles;
   }
+
+  // get weather data
+  async getWeatherData(source = this.state.selectedCity) {
+    const res = await axios(
+      `https://api.openweathermap.org/data/2.5/forecast/daily?q=${source}&units=metric&APPID=${
+        this.state.apiKeyWeather
+      }&cnt=3`
+    );
+    return await res.data;
+  }
+
   // handlers
   handleSourceChange = e => {
     let targetValue = e.target.value;
@@ -64,7 +76,7 @@ class App extends React.Component {
       try {
         this.setState({
           newsSelectedSource: targetValue,
-          newsData: await this.getData(targetValue),
+          newsData: await this.getNewsData(targetValue),
           showGrid: true
         });
       } catch (e) {
@@ -87,7 +99,9 @@ class App extends React.Component {
             <Loader />
           )}
         </div>
-        <WeatherWidget />
+        {this.state.weatherData && (
+          <WeatherWidget data={this.state.weatherData} />
+        )}
       </div>
     );
   }
