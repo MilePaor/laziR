@@ -2,13 +2,14 @@
   font-family: sans-serif;
   text-align: center;
 }
-.wrapper--news {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+p {
+  text-align: initial;
 }
 .news__item {
   width: 49%;
+}
+.card-content {
+  text-align: initial;
 }
 .nav {
   background-color: brown;
@@ -21,17 +22,6 @@
   left: 0;
   right: 0;
   z-index: 2;
-}
-select {
-  /* display: block !important; */
-}
-.logo {
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-}
-.logo img {
-  width: 100%;
 }
 .container {
   margin-top: 40px;

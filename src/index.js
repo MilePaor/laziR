@@ -4,6 +4,7 @@ import axios from "axios";
 
 import Nav from "./components/Nav";
 import News from "./components/News";
+import WeatherWidget from "./components/WeatherWidget";
 
 import Loader from "./components/loader";
 
@@ -12,20 +13,25 @@ import "./css/materialize.css";
 
 class App extends React.Component {
   state = {
-    apiKey: "77aaa40707ae48e6913523b88e3bf60c",
-    selectedSource: "cnn",
-    data: null,
-    sources: null,
+    apiKeyNews: "77aaa40707ae48e6913523b88e3bf60c",
+    newsSelectedSource: "cnn",
+    newsData: null,
+    newsSources: null,
+
+    apiKeyWeather: "f5cbece53f9805de76ff787b7dddb949",
+    selectedCity: "novi beograd",
+    weatherData: null,
+
     showGrid: true
   };
 
   componentDidMount() {
-    if (!this.state.data) {
+    if (!this.state.newsData) {
       (async () => {
         try {
           this.setState({
-            data: await this.getData(),
-            sources: await this.getSource()
+            newsData: await this.getData(),
+            newsSources: await this.getSource()
           });
         } catch (e) {
           console.log("erorcina", e);
@@ -39,16 +45,16 @@ class App extends React.Component {
     const res = await axios("https://newsapi.org/v1/sources");
     return await res.data.sources;
   }
-
-  async getData(source = this.state.selectedSource) {
+  // get news data
+  async getData(source = this.state.newsSelectedSource) {
     const res = await axios(
       `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${
-        this.state.apiKey
+        this.state.apiKeyNews
       }`
     );
     return await res.data.articles;
   }
-
+  // handlers
   handleSourceChange = e => {
     let targetValue = e.target.value;
     this.setState({
@@ -57,8 +63,8 @@ class App extends React.Component {
     (async () => {
       try {
         this.setState({
-          selectedSource: targetValue,
-          data: await this.getData(targetValue),
+          newsSelectedSource: targetValue,
+          newsData: await this.getData(targetValue),
           showGrid: true
         });
       } catch (e) {
@@ -66,21 +72,22 @@ class App extends React.Component {
       }
     })();
   };
-
+  // render
   render() {
     return (
       <div className="App">
         <Nav
-          sourceList={this.state.sources}
+          sourceList={this.state.newsSources}
           handleSourceChange={this.handleSourceChange}
         />
         <div className="container">
-          {this.state.data && this.state.showGrid ? (
-            <News data={this.state.data} />
+          {this.state.newsData && this.state.showGrid ? (
+            <News data={this.state.newsData} />
           ) : (
             <Loader />
           )}
         </div>
+        <WeatherWidget />
       </div>
     );
   }

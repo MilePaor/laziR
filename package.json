@@ -8,9 +8,11 @@
     "axios": "0.18.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.0.3",
+    "styled-components": "^4.1.2"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.9.4",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
