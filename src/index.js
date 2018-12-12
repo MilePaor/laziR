@@ -15,7 +15,8 @@ class App extends React.Component {
     apiKey: "77aaa40707ae48e6913523b88e3bf60c",
     selectedSource: "cnn",
     data: null,
-    sources: null
+    sources: null,
+    showGrid: true
   };
 
   componentDidMount() {
@@ -49,11 +50,16 @@ class App extends React.Component {
   }
 
   handleSourceChange = e => {
+    let targetValue = e.target.value;
+    this.setState({
+      showGrid: false
+    });
     (async () => {
       try {
         this.setState({
-          selectedSource: e.target.value,
-          data: await this.getData(e.target.value)
+          selectedSource: targetValue,
+          data: await this.getData(targetValue),
+          showGrid: true
         });
       } catch (e) {
         console.log("erorcina", e);
@@ -69,7 +75,11 @@ class App extends React.Component {
           handleSourceChange={this.handleSourceChange}
         />
         <div className="container">
-          {this.state.data ? <News data={this.state.data} /> : <Loader />}
+          {this.state.data && this.state.showGrid ? (
+            <News data={this.state.data} />
+          ) : (
+            <Loader />
+          )}
         </div>
       </div>
     );
