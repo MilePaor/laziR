@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "https://milepaor.github.io/laziR",
   "dependencies": {
     "axios": "0.18.0",
     "react": "16.5.2",
