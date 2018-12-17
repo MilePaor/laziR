@@ -22,7 +22,9 @@ class App extends React.Component {
     selectedCity: "novi beograd",
     weatherData: null,
 
-    showGrid: true
+    showGrid: true,
+
+    weatherWidgetOpen: false
   };
 
   componentDidMount() {
@@ -39,7 +41,7 @@ class App extends React.Component {
         }
       })();
     }
-    console.log("mount");
+    // console.log("mount");
   }
 
   async getSource() {
@@ -84,6 +86,11 @@ class App extends React.Component {
       }
     })();
   };
+  handleWidget = e => {
+    this.setState((prevState, props) => {
+      return { weatherWidgetOpen: !prevState.weatherWidgetOpen };
+    });
+  };
   // render
   render() {
     return (
@@ -100,7 +107,11 @@ class App extends React.Component {
           )}
         </div>
         {this.state.weatherData && (
-          <WeatherWidget data={this.state.weatherData} />
+          <WeatherWidget
+            data={this.state.weatherData}
+            weatherWidgetOpen={this.state.weatherWidgetOpen}
+            clickHandler={this.handleWidget}
+          />
         )}
       </div>
     );

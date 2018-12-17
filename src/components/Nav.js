@@ -18,7 +18,7 @@ const Nav = ({ handleSourceChange, sourceList }) => {
       <NavLogo>
         <NavLogoImg src={logo} alt="" />
       </NavLogo>
-      {sourceList ? (
+      {sourceList && (
         <select onChange={handleSourceChange}>
           {sourceList.map(source => {
             return (
@@ -28,8 +28,6 @@ const Nav = ({ handleSourceChange, sourceList }) => {
             );
           })}
         </select>
-      ) : (
-        "nema ga"
       )}
     </nav>
   );

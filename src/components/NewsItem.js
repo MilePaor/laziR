@@ -9,6 +9,8 @@ const NewsItem = ({ image, title, description, url }) => (
       <a
         className="btn-floating halfway-fab waves-effect waves-light red"
         href={url}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <i className="material-icons">arrow_forward</i>
       </a>
