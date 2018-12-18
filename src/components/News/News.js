@@ -2,8 +2,6 @@ import React from "react";
 import NewsItem from "./NewsItem";
 import styled from "styled-components";
 
-import "../css/styles.css";
-
 const WrapperNews = styled.div`
   display: flex;
   flex-wrap: wrap;

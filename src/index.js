@@ -2,13 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from "./serviceWorker";
 
-import Nav from "./components/Nav";
-import News from "./components/News";
-import WeatherWidget from "./components/WeatherWidget";
+import Nav from "./components/Nav/Nav";
+import News from "./components/News/News";
+import WeatherContainer from "./components/Weather/WeatherContainer";
 
-import Loader from "./components/loader";
+import Loader from "./components/Loader/loader";
 
 import "./css/styles.css";
 import "./css/materialize.css";
@@ -109,7 +109,7 @@ class App extends React.Component {
           )}
         </div>
         {this.state.weatherData && (
-          <WeatherWidget
+          <WeatherContainer
             data={this.state.weatherData}
             weatherWidgetOpen={this.state.weatherWidgetOpen}
             clickHandler={this.handleWidget}

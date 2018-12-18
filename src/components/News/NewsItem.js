@@ -1,16 +1,25 @@
 import React from "react";
+import styled from "styled-components";
 
-import "../css/styles.css";
+import "./news.css";
+
+const NewsItemDiv = styled.div`
+  width: 49%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`;
 
 const NewsItem = ({ image, title, description, url }) => (
-  <div className="news__item card">
+  <NewsItemDiv className="card">
     <div className="card-image">
-      <img src={image} alt="news" />
+      {image && <img src={image} alt="news" />}
       <a
         className="btn-floating halfway-fab waves-effect waves-light red"
         href={url}
         target="_blank"
         rel="noopener noreferrer"
+        style={{ bottom: !image && "-30px" }}
       >
         <i className="material-icons">arrow_forward</i>
       </a>
@@ -19,7 +28,7 @@ const NewsItem = ({ image, title, description, url }) => (
       <span className="card-title">{title}</span>
       <p>{description}</p>
     </div>
-  </div>
+  </NewsItemDiv>
 );
 
 export default NewsItem;

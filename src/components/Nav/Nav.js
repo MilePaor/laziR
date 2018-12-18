@@ -1,8 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../images/lazi.png";
+import logo from "../../images/logo.png";
 
-// import "../css/styles.css";
+const NavContainer = styled.nav`
+  background-color: brown;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  color: white;
+  @media (max-width: 600px) {
+    padding: 0 2%;
+  }
+`;
 const NavLogo = styled.div`
   width: 40px;
   height: 40px;
@@ -14,7 +33,7 @@ const NavLogoImg = styled.img`
 
 const Nav = ({ handleSourceChange, sourceList }) => {
   return (
-    <nav className="nav">
+    <NavContainer>
       <NavLogo>
         <NavLogoImg src={logo} alt="" />
       </NavLogo>
@@ -29,7 +48,7 @@ const Nav = ({ handleSourceChange, sourceList }) => {
           })}
         </select>
       )}
-    </nav>
+    </NavContainer>
   );
 };
 
