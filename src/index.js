@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 
+import * as serviceWorker from './serviceWorker';
+
 import Nav from "./components/Nav";
 import News from "./components/News";
 import WeatherWidget from "./components/WeatherWidget";
@@ -120,4 +122,4 @@ class App extends React.Component {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-ServiceWorker.register();
+serviceWorker.register();
