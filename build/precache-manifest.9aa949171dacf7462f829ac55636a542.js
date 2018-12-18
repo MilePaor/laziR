@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/laziR/static/css/main.1b1c8df8.chunk.css"
   },
   {
-    "revision": "3fd32775f0240e445bc6b205aae2ba49",
+    "revision": "4279e7ef871c06aad065673e78948990",
     "url": "/laziR/index.html"
   }
 ];
