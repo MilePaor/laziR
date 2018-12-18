@@ -1,7 +1,7 @@
 {
   "main.css": "/laziR/static/css/main.1b1c8df8.chunk.css",
-  "main.js": "/laziR/static/js/main.0c79bc30.chunk.js",
-  "main.js.map": "/laziR/static/js/main.0c79bc30.chunk.js.map",
+  "main.js": "/laziR/static/js/main.ed7c7780.chunk.js",
+  "main.js.map": "/laziR/static/js/main.ed7c7780.chunk.js.map",
   "static/js/1.aa4ec6e8.chunk.js": "/laziR/static/js/1.aa4ec6e8.chunk.js",
   "static/js/1.aa4ec6e8.chunk.js.map": "/laziR/static/js/1.aa4ec6e8.chunk.js.map",
   "runtime~main.js": "/laziR/static/js/runtime~main.05b35781.js",
@@ -10,6 +10,6 @@
   "static/media/lazi.png": "/laziR/static/media/lazi.1e4930e1.png",
   "static/media/up-arrow.svg": "/laziR/static/media/up-arrow.07737735.svg",
   "index.html": "/laziR/index.html",
-  "precache-manifest.1bc722a7b81c69ad03b679b840bc8fe3.js": "/laziR/precache-manifest.1bc722a7b81c69ad03b679b840bc8fe3.js",
+  "precache-manifest.55c9d1368aed1c9f0ad0501994adda32.js": "/laziR/precache-manifest.55c9d1368aed1c9f0ad0501994adda32.js",
   "service-worker.js": "/laziR/service-worker.js"
 }
