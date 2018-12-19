@@ -1,5 +1,5 @@
 # laziR
-React app
+React app + PWA
 
-https://newsapi.org/
+https://newsapi.org/ <br>
 https://openweathermap.org/
