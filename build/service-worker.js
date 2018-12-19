@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/laziR/precache-manifest.9aa949171dacf7462f829ac55636a542.js"
+  "/laziR/precache-manifest.fe327c9c1f145526b8ac7a4d486de861.js"
 );
 
 workbox.clientsClaim();
