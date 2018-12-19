@@ -12,8 +12,6 @@ const WeatherDay = styled.span`
 `;
 
 const WeatherItem = ({ image, temperature, dayName }) => {
-  console.log(dayName);
-
   return (
     <div>
       <WeatherImage

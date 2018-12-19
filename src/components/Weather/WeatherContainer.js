@@ -37,19 +37,19 @@ const Chevron = styled.div`
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 `;
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
-];
-let dateee = new Date().getDay();
 
 const WeatherContainer = ({ data, weatherWidgetOpen, clickHandler }) => {
   let weatherParams = data.list;
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+  let dateee = new Date().getDay();
 
   return (
     <WeatherDiv
@@ -62,7 +62,7 @@ const WeatherContainer = ({ data, weatherWidgetOpen, clickHandler }) => {
             key={value.dt}
             image={value.weather[0].icon}
             temperature={value.temp.day}
-            dayName={days[dateee]}
+            dayName={days[dateee++]}
           />
         );
       })}
