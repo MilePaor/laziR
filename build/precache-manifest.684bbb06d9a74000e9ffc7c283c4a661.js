@@ -4,27 +4,27 @@ self.__precacheManifest = [
     "url": "/laziR/static/media/logo.1e4930e1.png"
   },
   {
-    "revision": "946fb8bb4f6e56d421e92515d74b0985",
-    "url": "/laziR/static/media/cloud.946fb8bb.svg"
+    "revision": "a410f1ea0711fd90594893626edd4533",
+    "url": "/laziR/static/media/cloud.a410f1ea.svg"
   },
   {
     "revision": "05b357811dfff22c6747",
     "url": "/laziR/static/js/runtime~main.05b35781.js"
   },
   {
-    "revision": "412a0089801db31615e9",
-    "url": "/laziR/static/js/main.412a0089.chunk.js"
+    "revision": "89b1ec8515e8dca2b2be",
+    "url": "/laziR/static/js/main.89b1ec85.chunk.js"
   },
   {
     "revision": "9b5b6663aaa0722446a1",
     "url": "/laziR/static/js/1.9b5b6663.chunk.js"
   },
   {
-    "revision": "412a0089801db31615e9",
-    "url": "/laziR/static/css/main.7a668690.chunk.css"
+    "revision": "89b1ec8515e8dca2b2be",
+    "url": "/laziR/static/css/main.7f5fd7df.chunk.css"
   },
   {
-    "revision": "38720bdaacfe5f3fec5f6cb17c04474d",
+    "revision": "3d408994e7130fc6cd09e80a3cd710ec",
     "url": "/laziR/index.html"
   }
 ];
