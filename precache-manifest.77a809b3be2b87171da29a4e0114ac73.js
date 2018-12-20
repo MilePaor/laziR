@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/laziR/static/js/runtime~main.05b35781.js"
   },
   {
-    "revision": "6409a219c5dcf6eaac61",
-    "url": "/laziR/static/js/main.6409a219.chunk.js"
+    "revision": "0f63e1204bb4bb99e1b3",
+    "url": "/laziR/static/js/main.0f63e120.chunk.js"
   },
   {
     "revision": "9b5b6663aaa0722446a1",
     "url": "/laziR/static/js/1.9b5b6663.chunk.js"
   },
   {
-    "revision": "6409a219c5dcf6eaac61",
-    "url": "/laziR/static/css/main.7f5fd7df.chunk.css"
+    "revision": "0f63e1204bb4bb99e1b3",
+    "url": "/laziR/static/css/main.ae72001c.chunk.css"
   },
   {
-    "revision": "74604b468a1bbab96bdb4e074b79ca8d",
+    "revision": "e5409f36bbe6dea654a157dd93bc8efe",
     "url": "/laziR/index.html"
   }
 ];
