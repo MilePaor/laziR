@@ -1,6 +1,6 @@
 # laziR
 React pwa app 
 
-Moment.sjs <br>
+Moment.js <br>
 https://newsapi.org/ <br>
 https://openweathermap.org/
