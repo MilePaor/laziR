@@ -1,15 +1,15 @@
 {
-  "main.css": "/laziR/static/css/main.ae72001c.chunk.css",
-  "main.js": "/laziR/static/js/main.0f63e120.chunk.js",
-  "main.js.map": "/laziR/static/js/main.0f63e120.chunk.js.map",
-  "static/js/1.9b5b6663.chunk.js": "/laziR/static/js/1.9b5b6663.chunk.js",
-  "static/js/1.9b5b6663.chunk.js.map": "/laziR/static/js/1.9b5b6663.chunk.js.map",
+  "main.css": "/laziR/static/css/main.e85ff512.chunk.css",
+  "main.js": "/laziR/static/js/main.cfeb2c0e.chunk.js",
+  "main.js.map": "/laziR/static/js/main.cfeb2c0e.chunk.js.map",
+  "static/js/1.d06299be.chunk.js": "/laziR/static/js/1.d06299be.chunk.js",
+  "static/js/1.d06299be.chunk.js.map": "/laziR/static/js/1.d06299be.chunk.js.map",
   "runtime~main.js": "/laziR/static/js/runtime~main.05b35781.js",
   "runtime~main.js.map": "/laziR/static/js/runtime~main.05b35781.js.map",
-  "static/css/main.ae72001c.chunk.css.map": "/laziR/static/css/main.ae72001c.chunk.css.map",
+  "static/css/main.e85ff512.chunk.css.map": "/laziR/static/css/main.e85ff512.chunk.css.map",
   "static/media/logo.png": "/laziR/static/media/logo.1e4930e1.png",
-  "static/media/cloud.svg": "/laziR/static/media/cloud.a410f1ea.svg",
+  "static/media/cloud.svg": "/laziR/static/media/cloud.946fb8bb.svg",
   "index.html": "/laziR/index.html",
-  "precache-manifest.77a809b3be2b87171da29a4e0114ac73.js": "/laziR/precache-manifest.77a809b3be2b87171da29a4e0114ac73.js",
+  "precache-manifest.02181b86cb4ea71873a40398b513002b.js": "/laziR/precache-manifest.02181b86cb4ea71873a40398b513002b.js",
   "service-worker.js": "/laziR/service-worker.js"
 }
