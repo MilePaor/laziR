@@ -12,6 +12,7 @@ const WeatherDay = styled.span`
 `;
 
 const WeatherItem = ({ image, temperature, dayName }) => {
+
   return (
     <div>
       <WeatherImage
