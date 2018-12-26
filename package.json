@@ -4,7 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "https://milepaor.github.io/laziR",
+  "homepage": "https://milepaor.in.rs/lazi-react/",
   "dependencies": {
     "axios": "0.18.0",
     "gh-pages": "^2.0.1",
