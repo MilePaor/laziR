@@ -11,7 +11,9 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js"
+);
 
 importScripts(
   "/lazi-react/precache-manifest.8c92789fb3c1b8a363903a8a596b068c.js"
@@ -29,6 +31,5 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerNavigationRoute("/lazi-react/index.html", {
-  
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+  blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/]
 });
