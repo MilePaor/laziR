@@ -15,7 +15,7 @@ const WeatherItem = ({ image, temperature, dayName }) => {
   return (
     <div>
       <WeatherImage
-        src={`http://openweathermap.org/img/w/${image}.png`}
+        src={`https://openweathermap.org/img/w/${image}.png`}
         alt="Weather icon"
       />
       <WeatherText>{Math.floor(temperature)}&#8451;</WeatherText>
