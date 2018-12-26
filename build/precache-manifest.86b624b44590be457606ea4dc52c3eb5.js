@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/lazi-react/static/js/runtime~main.0e897afb.js"
   },
   {
-    "revision": "3fc280abf7da6999c8c4",
-    "url": "/lazi-react/static/js/main.3fc280ab.chunk.js"
+    "revision": "c2b25b1c7f06d2fe1ca8",
+    "url": "/lazi-react/static/js/main.c2b25b1c.chunk.js"
   },
   {
-    "revision": "ca0bd9f406def28a684f",
-    "url": "/lazi-react/static/js/1.ca0bd9f4.chunk.js"
+    "revision": "7ad8300dc1957cc3200e",
+    "url": "/lazi-react/static/js/1.7ad8300d.chunk.js"
   },
   {
-    "revision": "3fc280abf7da6999c8c4",
-    "url": "/lazi-react/static/css/main.ae72001c.chunk.css"
+    "revision": "c2b25b1c7f06d2fe1ca8",
+    "url": "/lazi-react/static/css/main.acdf6eec.chunk.css"
   },
   {
-    "revision": "134fe097164ea6ef7b8a4ca64b65da3e",
+    "revision": "1eabe9db2a9adf11e9fd081d33d78af9",
     "url": "/lazi-react/index.html"
   }
 ];

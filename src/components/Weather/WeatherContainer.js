@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WeatherItem from "./WeatherItem";
+import moment from "moment";
 
 import chevronImg from "../../images/cloud.svg";
 
@@ -30,7 +31,7 @@ const Chevron = styled.div`
   height: 40px;
   position: absolute;
   right: 8px;
-  top: -40px;
+  top: -39px;
   z-index: 57;
   background-color: #a52a2a;
   fill: white;
@@ -40,16 +41,16 @@ const Chevron = styled.div`
 
 const WeatherContainer = ({ data, weatherWidgetOpen, clickHandler }) => {
   let weatherParams = data.list;
-  const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
+
+  let dani = [
+    moment().format("dddd"),
+    moment()
+      .add(1, "days")
+      .format("dddd"),
+    moment()
+      .add(2, "days")
+      .format("dddd")
   ];
-  let dateee = new Date().getDay();
 
   return (
     <WeatherDiv
@@ -62,7 +63,7 @@ const WeatherContainer = ({ data, weatherWidgetOpen, clickHandler }) => {
             key={value.dt}
             image={value.weather[0].icon}
             temperature={value.temp.day}
-            dayName={days[dateee++]}
+            dayName={dani[index]}
           />
         );
       })}
